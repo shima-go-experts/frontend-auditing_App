@@ -13,7 +13,7 @@ export default function ResetPassword() {
     e.preventDefault();
     setLoading(true);
 
-    const res = await fetch("http://127.0.0.1:5000/api/auth/reset-password", {
+    const res = await fetch("https://auditing-app.onrender.com/api/auth/reset-password", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
